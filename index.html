@@ -11,6 +11,7 @@
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
+                 stats
             renderer="logarithmicDepthBuffer: true;"
             embedded
             loading-screen="enabled: false;"
@@ -24,6 +25,12 @@
             </a-assets>
 
                 <a-entity
+                    
+                          position="600 0 100" rotation="0 290 0"
+                          light="type: hemisphere; color: #654; groundColor: #fff; intensity: 3 "
+                          
+                          
+                          
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
