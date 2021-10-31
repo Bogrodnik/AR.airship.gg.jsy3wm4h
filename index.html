@@ -30,6 +30,11 @@
                    physicallyCorrectLights: true;"
                       
             ></a-scene>
+            
+            <a-entity camera look-controls position="0 1.6 0"></a-entity>
+            
+            <a-entity light="type:directional; castShadow:true;" position="1 1 1"></a-entity>
+<a-gltf-model src="tree.gltf" shadow="receive: false"></a-gltf-model>
            
             <a-camera id='camera1' look-controls-enabled='false' 
             arjs-look-controls='smoothingFactor: 0.2' gps-camera='gpsMinDistance: 10' 
